@@ -5,6 +5,11 @@
  */
 
 package com.main;
+import java.util.ArrayList;
+import java.util.Arrays;
+import javax.swing.JTextField;
+import javax.swing.JOptionPane;
+
 
 /**
  *
@@ -28,6 +33,7 @@ public class Board extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jToggleButton1 = new javax.swing.JToggleButton();
         topLeftTextField = new javax.swing.JTextField();
         topMiddleTextField = new javax.swing.JTextField();
         topRightTextField = new javax.swing.JTextField();
@@ -46,36 +52,128 @@ public class Board extends javax.swing.JFrame {
         jLayeredPane9 = new javax.swing.JLayeredPane();
         jLayeredPane10 = new javax.swing.JLayeredPane();
 
+        jToggleButton1.setText("jToggleButton1");
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setName("frameBoard"); // NOI18N
         setResizable(false);
 
+        topLeftTextField.setEditable(false);
         topLeftTextField.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        topLeftTextField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         topLeftTextField.setText("-");
+        topLeftTextField.setFocusable(false);
+        topLeftTextField.setRequestFocusEnabled(false);
+        topLeftTextField.setVerifyInputWhenFocusTarget(false);
+        topLeftTextField.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                topLeftTextFieldMouseClicked(evt);
+            }
+        });
 
+        topMiddleTextField.setEditable(false);
         topMiddleTextField.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        topMiddleTextField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         topMiddleTextField.setText("-");
+        topMiddleTextField.setFocusable(false);
+        topMiddleTextField.setRequestFocusEnabled(false);
+        topMiddleTextField.setVerifyInputWhenFocusTarget(false);
+        topMiddleTextField.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                topMiddleTextFieldMouseClicked(evt);
+            }
+        });
 
+        topRightTextField.setEditable(false);
         topRightTextField.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        topRightTextField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         topRightTextField.setText("-");
+        topRightTextField.setFocusable(false);
+        topRightTextField.setRequestFocusEnabled(false);
+        topRightTextField.setVerifyInputWhenFocusTarget(false);
+        topRightTextField.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                topRightTextFieldMouseClicked(evt);
+            }
+        });
 
+        middleLeftTextField.setEditable(false);
         middleLeftTextField.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        middleLeftTextField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         middleLeftTextField.setText("-");
+        middleLeftTextField.setFocusable(false);
+        middleLeftTextField.setRequestFocusEnabled(false);
+        middleLeftTextField.setVerifyInputWhenFocusTarget(false);
+        middleLeftTextField.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                middleLeftTextFieldMouseClicked(evt);
+            }
+        });
 
+        middleTextField.setEditable(false);
         middleTextField.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        middleTextField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         middleTextField.setText("-");
+        middleTextField.setFocusable(false);
+        middleTextField.setRequestFocusEnabled(false);
+        middleTextField.setVerifyInputWhenFocusTarget(false);
+        middleTextField.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                middleTextFieldMouseClicked(evt);
+            }
+        });
 
+        middleRightTextField.setEditable(false);
         middleRightTextField.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        middleRightTextField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         middleRightTextField.setText("-");
+        middleRightTextField.setFocusable(false);
+        middleRightTextField.setRequestFocusEnabled(false);
+        middleRightTextField.setVerifyInputWhenFocusTarget(false);
+        middleRightTextField.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                middleRightTextFieldMouseClicked(evt);
+            }
+        });
 
+        bottomLeftTextField.setEditable(false);
         bottomLeftTextField.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        bottomLeftTextField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         bottomLeftTextField.setText("-");
+        bottomLeftTextField.setFocusable(false);
+        bottomLeftTextField.setRequestFocusEnabled(false);
+        bottomLeftTextField.setVerifyInputWhenFocusTarget(false);
+        bottomLeftTextField.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                bottomLeftTextFieldMouseClicked(evt);
+            }
+        });
 
+        bottomMiddleTextField.setEditable(false);
         bottomMiddleTextField.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        bottomMiddleTextField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         bottomMiddleTextField.setText("-");
+        bottomMiddleTextField.setFocusable(false);
+        bottomMiddleTextField.setRequestFocusEnabled(false);
+        bottomMiddleTextField.setVerifyInputWhenFocusTarget(false);
+        bottomMiddleTextField.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                bottomMiddleTextFieldMouseClicked(evt);
+            }
+        });
 
+        bottomRightTextField.setEditable(false);
         bottomRightTextField.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        bottomRightTextField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         bottomRightTextField.setText("-");
+        bottomRightTextField.setFocusable(false);
+        bottomRightTextField.setRequestFocusEnabled(false);
+        bottomRightTextField.setVerifyInputWhenFocusTarget(false);
+        bottomRightTextField.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                bottomRightTextFieldMouseClicked(evt);
+            }
+        });
 
         jLayeredPane3.setBackground(new java.awt.Color(0, 0, 0));
         jLayeredPane3.setEnabled(false);
@@ -202,40 +300,44 @@ public class Board extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(30, 30, 30)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(topLeftTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(bottomLeftTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(middleLeftTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(41, 41, 41)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(topLeftTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(22, 22, 22)
+                                .addComponent(bottomLeftTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(8, 8, 8))
+                    .addComponent(middleLeftTextField, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(17, 17, 17)
                         .addComponent(jLayeredPane6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 50, Short.MAX_VALUE)
-                        .addComponent(bottomMiddleTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(49, 49, 49)
+                        .addGap(37, 37, 37)
+                        .addComponent(bottomMiddleTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 38, Short.MAX_VALUE)
                         .addComponent(jLayeredPane5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(35, 35, 35)
-                        .addComponent(bottomRightTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(34, 34, 34))
+                        .addGap(18, 18, 18)
+                        .addComponent(bottomRightTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(27, 27, 27))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(39, 39, 39)
+                        .addGap(15, 15, 15)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jLayeredPane7)
                             .addComponent(jLayeredPane10))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(middleTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(topMiddleTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(45, 45, 45)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(topMiddleTextField, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)
+                            .addComponent(middleTextField))
+                        .addGap(36, 36, 36)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLayeredPane9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLayeredPane8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(31, 31, 31)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(topRightTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(middleRightTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(38, 38, 38))))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(middleRightTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(topRightTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(29, 29, 29))))
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLayeredPane3)
@@ -250,61 +352,63 @@ public class Board extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(22, 22, 22)
-                        .addComponent(topLeftTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(25, 25, 25)
-                        .addComponent(middleRightTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addContainerGap()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLayeredPane10, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLayeredPane9, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(21, 21, 21)
-                        .addComponent(topMiddleTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLayeredPane9, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addComponent(topLeftTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(19, 19, 19))))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(53, 53, 53)
-                                .addComponent(middleLeftTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(31, 31, 31))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                        .addComponent(topRightTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addComponent(jLayeredPane7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jLayeredPane8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addGap(9, 9, 9)))))
-                        .addComponent(jLayeredPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(57, 57, 57)
-                        .addComponent(middleTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGap(26, 26, 26)
+                                .addComponent(middleRightTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(25, 25, 25)
+                                .addComponent(topMiddleTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(15, 15, 15)))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(26, 26, 26)
-                        .addComponent(bottomRightTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap())
+                        .addGap(39, 39, 39)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jLayeredPane7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLayeredPane8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(9, 9, 9))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addComponent(topRightTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(27, 27, 27))))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(middleLeftTextField, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(middleTextField, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(27, 27, 27)))
+                .addComponent(jLayeredPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLayeredPane6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGap(22, 22, 22)
-                                        .addComponent(bottomLeftTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addComponent(jLayeredPane5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(11, 11, 11))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                 .addComponent(bottomMiddleTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(26, 26, 26))))))
+                                .addGap(25, 25, 25))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(27, 27, 27)
+                                .addComponent(bottomRightTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(28, 28, 28)
+                                .addComponent(bottomLeftTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addContainerGap())))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addGap(85, 85, 85)
@@ -315,6 +419,106 @@ public class Board extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void topLeftTextFieldMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_topLeftTextFieldMouseClicked
+        textBoxClicked(evt);
+    }//GEN-LAST:event_topLeftTextFieldMouseClicked
+
+    private void topMiddleTextFieldMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_topMiddleTextFieldMouseClicked
+        textBoxClicked(evt);
+    }//GEN-LAST:event_topMiddleTextFieldMouseClicked
+
+    private void middleRightTextFieldMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_middleRightTextFieldMouseClicked
+        textBoxClicked(evt);
+    }//GEN-LAST:event_middleRightTextFieldMouseClicked
+
+    private void middleLeftTextFieldMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_middleLeftTextFieldMouseClicked
+        textBoxClicked(evt);
+    }//GEN-LAST:event_middleLeftTextFieldMouseClicked
+
+    private void middleTextFieldMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_middleTextFieldMouseClicked
+        textBoxClicked(evt);
+    }//GEN-LAST:event_middleTextFieldMouseClicked
+
+    private void topRightTextFieldMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_topRightTextFieldMouseClicked
+        textBoxClicked(evt);
+    }//GEN-LAST:event_topRightTextFieldMouseClicked
+
+    private void bottomLeftTextFieldMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bottomLeftTextFieldMouseClicked
+        textBoxClicked(evt);
+    }//GEN-LAST:event_bottomLeftTextFieldMouseClicked
+
+    private void bottomMiddleTextFieldMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bottomMiddleTextFieldMouseClicked
+        textBoxClicked(evt);
+    }//GEN-LAST:event_bottomMiddleTextFieldMouseClicked
+
+    private void bottomRightTextFieldMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bottomRightTextFieldMouseClicked
+        textBoxClicked(evt);
+    }//GEN-LAST:event_bottomRightTextFieldMouseClicked
+
+    public void textBoxClicked(java.awt.event.MouseEvent evt){
+        boolean win = false;
+        javax.swing.JTextField textField = (javax.swing.JTextField) evt.getSource();
+        
+        if(textField.getText() != "O" & textField.getText() != "X"){
+            textField.setText("X");
+            if(checkConditions()){
+                JOptionPane.showMessageDialog(null, "ohnoes!", "ohnoes!", JOptionPane.ERROR_MESSAGE);
+
+            }
+        }
+        
+        
+    }
+    
+    public String[] getBoardPositions(){
+            
+        String[] currentBoard = new String[9];
+        currentBoard[0] = topLeftTextField.getText();
+        currentBoard[1] = topMiddleTextField.getText();
+        currentBoard[2] = topRightTextField.getText();
+        currentBoard[3] = middleLeftTextField.getText();
+        currentBoard[4] = middleTextField.getText();
+        currentBoard[5] = middleRightTextField.getText();
+        currentBoard[6] = bottomLeftTextField.getText();
+        currentBoard[7] = bottomMiddleTextField.getText();
+        currentBoard[8] = bottomRightTextField.getText();
+        
+        return currentBoard;
+    }
+    
+    public boolean checkConditions(){
+        boolean win = false;
+        boolean lose = false;
+        boolean draw = false;
+        
+        String[] currentBoard = getBoardPositions();
+        
+        //Check for draw
+        if(Arrays.asList(currentBoard).contains("-")){
+          draw = false;  
+        }
+        
+        //Horizontal
+        if((currentBoard[0] == "X" && currentBoard[1] == "X" && currentBoard[2] == "X") ||
+        (currentBoard[3] == "X" && currentBoard[4] == "X" && currentBoard[5] == "X") ||
+                (currentBoard[6] == "X" && currentBoard[7] == "X" && currentBoard[8] == "X")){
+            return true;
+        }
+        else if((currentBoard[0] == "X" && currentBoard[3] == "X" && currentBoard[6] == "X") ||
+                (currentBoard[1] == "X" && currentBoard[4] == "X" && currentBoard[7] == "X") ||
+                (currentBoard[2] == "X" && currentBoard[5] == "X" && currentBoard[8] == "X")){
+            return true;
+        }
+        else if((currentBoard[0] == "X" && currentBoard[4] == "X" && currentBoard[8] == "X") ||
+                (currentBoard[2] == "X" && currentBoard[4] == "X" && currentBoard[6] == "X")){
+            return true;
+        }
+      
+        
+        return false;
+    }
+    
+    
     /**
      * @param args the command line arguments
      */
@@ -348,6 +552,7 @@ public class Board extends javax.swing.JFrame {
                 new Board().setVisible(true);
             }
         });
+            
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -362,6 +567,7 @@ public class Board extends javax.swing.JFrame {
     private javax.swing.JLayeredPane jLayeredPane7;
     private javax.swing.JLayeredPane jLayeredPane8;
     private javax.swing.JLayeredPane jLayeredPane9;
+    private javax.swing.JToggleButton jToggleButton1;
     private javax.swing.JTextField middleLeftTextField;
     private javax.swing.JTextField middleRightTextField;
     private javax.swing.JTextField middleTextField;

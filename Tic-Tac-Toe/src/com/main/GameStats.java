@@ -1,11 +1,13 @@
 /*
  *
  */
+
 package com.main;
 
 /**
  * @author Luke Mawby
  */
+
 public class GameStats {
 
     int numberOfWins;
